@@ -25,7 +25,7 @@ private:
 public:
     GreenCityCalculator() : cityName(""), population(0), energyConsumption(0.0), 
         wasteGenerated(0.0), transportEmissions(0.0), greenSpacePercentage(0.0) {}
-
+    //prompt user
     void collectCityData() {
         cout << "\nEnter your city name: ";
         cin.ignore();
