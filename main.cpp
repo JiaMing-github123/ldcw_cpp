@@ -78,7 +78,7 @@ public:
         double cityArea = population * 0.001;
         double greenSpaceArea = (cityArea * greenSpacePercentage) / 100;
         double greenSpacePerPerson = (greenSpaceArea * 1000000) / population;
-
+    //print results
         cout << "Energy consumption per capita: " << energyPerCapita << " MWh/person" << endl;
         cout << "Waste generation per capita: " << wastePerCapita << " tons/person" << endl;
         cout << "Transport emissions per capita: " << emissionsPerCapita << " tons CO2/person" << endl;
@@ -86,7 +86,7 @@ public:
 
         calculateSustainabilityScore(energyPerCapita, wastePerCapita, emissionsPerCapita, greenSpacePerPerson);
     }
-
+    //calculate score
     void calculateSustainabilityScore(double energyPC, double wastePC, double emissionsPC, double greenSpacePC) {
         int energyScore = (energyPC <= 5.0) ? 25 : (energyPC <= 10.0) ? 20 : (energyPC <= 15.0) ? 15 : (energyPC <= 20.0) ? 10 : 5;
         int wasteScore = (wastePC <= 0.3) ? 25 : (wastePC <= 0.5) ? 20 : (wastePC <= 0.8) ? 15 : (wastePC <= 1.2) ? 10 : 5;
@@ -129,6 +129,7 @@ public:
 };
 
 void displayMenu() {
+    //menu
     cout << "\n=== GREEN CITY SMART LIVING SYSTEM ===" << endl;
     cout << "1. Analyze City Sustainability" << endl;
     cout << "2. View Green Living Tips" << endl;
