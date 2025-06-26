@@ -1,4 +1,3 @@
-// Green City Smart Living System - Optimized for Online Compiler
 #include <iostream>
 #include <string>
 #include <vector>
@@ -116,6 +115,7 @@ public:
     }
 
     void displayGreenCityTips() {
+        //display
         cout << "\n=== GREEN LIVING TIPS ===" << endl;
         vector<string> tips = {
             "1. Use public transport or cycle",
