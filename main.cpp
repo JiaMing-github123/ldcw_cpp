@@ -106,6 +106,7 @@ public:
     }
 
     void provideSustainabilityRating(int score) {
+        //sus rating
         cout << "\n=== SUSTAINABILITY RATING ===" << endl;
         if (score >= 80) cout << "Rating: EXCELLENT - Your city is a model green city!" << endl;
         else if (score >= 65) cout << "Rating: GOOD - Your city is on the right track!" << endl;
